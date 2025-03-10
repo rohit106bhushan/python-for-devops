@@ -10,6 +10,8 @@ from flask import Flask
 app = Flask(__name__)
 
 # Define a route that handles GET requests
+# decorator checks if they are accessing it on this particular path
+
 @app.route('/createJira', methods=['POST'])
 def createJira():
 
